@@ -1,11 +1,17 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { HomePageComponent } from './pages/home-page/home-page.component';
-import { AnimesPageComponent } from './pages/animes-page/animes-page.component';
+import { FilmsPageComponent } from './pages/films-page/films-page.component';
+import { FilmDetailsPageComponent } from './pages/film-details-page/film-details-page.component';
+import { TvShowsPageComponent } from './pages/tv-shows-page/tv-shows-page.component';
+import { TvShowsDetailsPageComponent } from './pages/tv-shows-details-page/tv-shows-details-page.component';
 
 const routes: Routes = [
   { path: '', component: HomePageComponent },
-  { path: 'animes', component: AnimesPageComponent },
+  { path: 'films', component: FilmsPageComponent },
+  { path: 'films/:id', component: FilmDetailsPageComponent },
+  { path: 'tv-shows', component: TvShowsPageComponent },
+  { path: 'tv-shows/:id', component: TvShowsDetailsPageComponent },
 ];
 
 @NgModule({

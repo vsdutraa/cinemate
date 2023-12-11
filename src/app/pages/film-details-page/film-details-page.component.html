@@ -1,0 +1,28 @@
+<app-navbar></app-navbar>
+<div class="content">
+  <img class="backdrop-filter" src="../../../assets/images/filter img.png" />
+  <img
+    class="film-backdrop"
+    src="https://image.tmdb.org/t/p/original/{{ film.backdrop_path }}"
+    alt="{{ film.title }} backdrop"
+  />
+  <div class="film-details">
+    <div class="col-1">
+      <div class="film">
+        <img
+          height="250"
+          src="https://image.tmdb.org/t/p/original/{{ film.poster_path }}"
+          alt="{{ film.title }} poster"
+        />
+      </div>
+    </div>
+    <div class="col-2">
+      <div class="film-title">
+        <h1>{{ film.title }}</h1>
+        <h3>{{ year }}</h3>
+        <h3><span>Directed by</span> {{ director }}</h3>
+      </div>
+      <p class="film-overview">{{ film.overview }}</p>
+    </div>
+  </div>
+</div>

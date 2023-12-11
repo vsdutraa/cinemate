@@ -1,0 +1,17 @@
+/* column */
+col-1 {
+  float: left;
+}
+
+col-2 {
+  float: right;
+}
+
+/* exclusive css */
+.film {
+  width: 230px;
+}
+
+.film img {
+  box-shadow: 0px 0px 5px #000000b7;
+}

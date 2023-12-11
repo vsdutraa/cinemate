@@ -1,6 +1,42 @@
-<div class="Home">
-  <app-navbar></app-navbar>
-  <div class="content">
-    <h1>Hello Home!</h1>
+<app-navbar></app-navbar>
+<div class="content">
+  <div class="app-intro">
+    <img class="backdrop-filter" src="../../../assets/images/filter img.png" />
+    <img
+      class="film-backdrop"
+      src="https://image.tmdb.org/t/p/original//t5zCBSB5xMDKcDqe91qahCOUYVV.jpg"
+      alt=""
+    />
+    <h1>
+      Dive into a world of movies and TV shows. Whether you're a film buff or
+      just love a good series, we're here to enhance your experience.
+    </h1>
+  </div>
+
+  <div class="films">
+    <a [routerLink]="['/films']"><p>POPULAR FILMS...</p></a>
+    <div class="film-list" *ngIf="popularFilms">
+      <div class="film" *ngFor="let film of popularFilms">
+        <a [routerLink]="['/films', film.id]">
+          <img
+            height="250"
+            src="https://image.tmdb.org/t/p/original/{{ film.poster_path }}"
+            alt="{{ film.title }} poster"
+          />
+        </a>
+      </div>
+    </div>
+    <a [routerLink]="['/tv-shows']"><p>POPULAR TV SHOWS...</p></a>
+    <div class="film-list" *ngIf="popularTvShows">
+      <div class="film" *ngFor="let tvShow of popularTvShows">
+        <a [routerLink]="['/tv-shows', tvShow.id]">
+          <img
+            height="250"
+            src="https://image.tmdb.org/t/p/original/{{ tvShow.poster_path }}"
+            alt="{{ tvShow.title }} poster"
+          />
+        </a>
+      </div>
+    </div>
   </div>
 </div>

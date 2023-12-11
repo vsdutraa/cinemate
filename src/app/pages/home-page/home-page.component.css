@@ -1,0 +1,13 @@
+.film {
+  width: calc(20% - 10px);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: color 0.1s ease;
+}
+
+a:hover {
+  color: #fff;
+}

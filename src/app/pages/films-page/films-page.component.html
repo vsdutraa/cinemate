@@ -1,0 +1,17 @@
+<app-navbar></app-navbar>
+<div class="content">
+  <div class="films">
+    <p>POPULAR FILMS</p>
+    <div class="film-list" *ngIf="popularFilms">
+      <div class="film" *ngFor="let film of popularFilms">
+        <a [routerLink]="['/films', film.id]">
+          <img
+            height="250"
+            src="https://image.tmdb.org/t/p/original/{{ film.poster_path }}"
+            alt="{{ film.title }} poster"
+          />
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
