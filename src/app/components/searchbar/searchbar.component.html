@@ -1,1 +1,11 @@
-<p>searchbar works!</p>
+<div class="searchbar">
+  <input
+    class="search-input"
+    type="text"
+    [(ngModel)]="searchTerm"
+    (keydown)="onEnter($event)"
+  />
+  <button class="search-button" (click)="searchContent()">
+    <img src="../../../assets/images/search_icon.svg" />
+  </button>
+</div>

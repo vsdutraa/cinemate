@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
+import { FormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
@@ -11,6 +11,7 @@ import { FilmDetailsPageComponent } from './pages/film-details-page/film-details
 import { TvShowsPageComponent } from './pages/tv-shows-page/tv-shows-page.component';
 import { TvShowsDetailsPageComponent } from './pages/tv-shows-details-page/tv-shows-details-page.component';
 import { SearchbarComponent } from './components/searchbar/searchbar.component';
+import { SearchResultsPageComponent } from './pages/search-results-page/search-results-page.component';
 
 @NgModule({
   declarations: [
@@ -22,8 +23,9 @@ import { SearchbarComponent } from './components/searchbar/searchbar.component';
     TvShowsPageComponent,
     TvShowsDetailsPageComponent,
     SearchbarComponent,
+    SearchResultsPageComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule, HttpClientModule],
+  imports: [BrowserModule, AppRoutingModule, HttpClientModule, FormsModule],
   providers: [],
   bootstrap: [AppComponent],
 })

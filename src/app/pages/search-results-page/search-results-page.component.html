@@ -1,0 +1,30 @@
+<app-navbar></app-navbar>
+<div class="content">
+  <div *ngIf="searchResults.length > 0; else noResults">
+    <p>FOUND {{ searchResults.length }} MATCHES FOR "{{ searchTerm }}"</p>
+    <div class="films">
+      <div class="film-list" *ngIf="searchResults">
+        <div class="film" *ngFor="let content of searchResults">
+          <a
+            [routerLink]="[
+              content.media_type === 'movie' ? '/films' : '/tv-shows',
+              content.id
+            ]"
+          >
+            <img
+              src="https://image.tmdb.org/t/p/original/{{
+                content.poster_path
+              }}"
+              alt="{{
+                content.media_type === 'movie' ? content.title : content.name
+              }}"
+            />
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <ng-template #noResults>
+    <p>No results found.</p>
+  </ng-template>
+</div>

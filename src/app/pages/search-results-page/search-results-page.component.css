@@ -1,0 +1,9 @@
+.film {
+  width: calc(20% - 10px);
+}
+
+p {
+  font-size: 12px;
+  text-transform: uppercase;
+  line-height: 3;
+}

@@ -1,0 +1,32 @@
+.searchbar {
+  position: relative;
+  bottom: 3px;
+  background: #2f3640;
+  padding: 5px;
+  border-radius: 40px;
+}
+
+.search-button {
+  margin-left: 10px;
+  float: right;
+  width: 20px;
+  height: 20px;
+  background: none;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.search-input {
+  color: #fff;
+  font-size: 12px;
+  float: left;
+  border: none;
+  background: none;
+  outline: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+}
