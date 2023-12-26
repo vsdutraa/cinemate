@@ -2,14 +2,6 @@
 
 Um web app dedicado a explorar o mundo do entretenimento cinematográfico e televisivo. Descubra filmes, programas de TV.
 
-## Alunos
-
-* João Pedro Rodrigues Melo - 01555197
-* Luana Revoredo Braz de Souza - 01555750
-* Pedro Braz de Oliveira Viana - 01535206
-* Pedro São Paulo da Silva Santos - 01503728
-* Victor Silva Dutra de Amorim - 01515499
-
 ## Processos de execução:
 
 1. **Clone o repositório:**
